@@ -1,0 +1,36 @@
+---
+layout: nil
+urls:
+  - http://example.com
+  - HTTP://example.com
+  - http://example.com/reviews/
+  - http://example.com/reviews/index.php
+  - example.com
+  - example.com/reviews/
+  - example.com/reviews/index.php
+---
+<style type="text/css">
+	table {
+		border-collapse: collapse;
+		margin-top: 2em;
+	}
+
+	th {
+		background: LightGrey;	
+		text-align: left;
+		padding-right: 2em;
+	}
+
+	td {
+		padding-right: 2em;
+	}
+</style>
+
+<h2><em>domain_name</em> filter plugin for Liquid</h2>
+Below are examples of the output from the domain_name filter
+<table>
+	<tr><th>URL</th><th>Domain Name</th></tr>
+	{% for url in page.urls %}
+		<tr><td>{{url}}</td><td>{{ url|domain_name }}</td></tr>
+	{% endfor %}
+</table>

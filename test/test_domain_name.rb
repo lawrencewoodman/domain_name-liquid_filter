@@ -8,19 +8,19 @@ class FilterTest < Test::Unit::TestCase
     @context = Context.new
   end
 
-	def test_domain_name
-		urls = ['http://example.com',
-		        'HTTP://example.com',
-		        'http://example.com/reviews/',
-		        'http://example.com/reviews/index.php', 
-		        'example.com',
-		        'example.com/reviews/',
-		        'example.com/reviews/index.php']
+  def test_domain_name
+    urls = ['http://example.com',
+            'HTTP://example.com',
+            'http://example.com/reviews/',
+            'http://example.com/reviews/index.php',
+            'example.com',
+            'example.com/reviews/',
+            'example.com/reviews/index.php']
 
-		urls.each do |url|
-			@context['var'] = url
-			assert_equal "example.com", Variable.new("var | domain_name").render(@context)
-		end
-	end
+    urls.each do |url|
+      @context['var'] = url
+      assert_equal "example.com", Variable.new("var | domain_name").render(@context)
+    end
+  end
 
 end

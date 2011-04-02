@@ -6,7 +6,7 @@ This is a [Liquid](http://www.liquidmarkup.org/) Filter that will display the do
 Installation
 ------------
 This was originally developed for use with [Jekyll](http://jekyllrb.com/), to register it as a plugin,
-copy `domain_name.filter.rb` to your `_plugins` directory.
+copy `_plugins/domain_name.filter.rb` to your `_plugins` directory.
 
 How to use it
 -------------

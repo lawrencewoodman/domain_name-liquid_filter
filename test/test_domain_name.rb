@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../domain_name.filter'
+require_relative '../_plugins/domain_name.filter'
 
 class FilterTest < Test::Unit::TestCase
   include Liquid

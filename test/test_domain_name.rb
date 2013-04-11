@@ -15,7 +15,10 @@ class FilterTest < Test::Unit::TestCase
             'http://example.com/reviews/index.php',
             'example.com',
             'example.com/reviews/',
-            'example.com/reviews/index.php']
+            'example.com/reviews/index.php',
+            'https://example.com',
+            'https://example.com/lvl/page.html',
+            'ftp://example.com']
 
     urls.each do |url|
       @context['var'] = url
